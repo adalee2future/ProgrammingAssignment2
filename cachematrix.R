@@ -9,7 +9,7 @@
 ## 	getinv:	 get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-  ## intially set inv NULL
+  ## initially set inv NULL
   inv <- NULL
  
   set <- function(ne){

@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
   ## initially set inv NULL
   inv <- NULL
  
-  set <- function(ne){
+  set <- function(ma){
     x <<- ma
     inv <<- NULL
   }

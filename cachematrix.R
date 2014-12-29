@@ -38,13 +38,13 @@ cacheSolve <- function(x, ...) {
   
   inv <- x$getinv()
   
-  ## if there is inv, then return it
+  ## if there is inv, return it
   if(!is.null(inv)){
     message("getting cached data")
     return(inv)
   }
   
-  ## otherwise, compute the inv, save it to x, and return the inv
+  ## otherwise, compute the inv, save it to x, then return the inv
   data <- x$get()
   inv <- solve(data, ...)
   x$setinv(inv)
